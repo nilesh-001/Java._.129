@@ -1,8 +1,7 @@
 import java.util.*;
 public class MyException {
-    public static void main(String[] args){
+    public static void main(String[] args) {
         int x,y,z=0;
-
         Scanner sc=new Scanner(System.in);
         try{
             x=sc.nextInt();

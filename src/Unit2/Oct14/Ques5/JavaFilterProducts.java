@@ -17,10 +17,13 @@ public class JavaFilterProducts {
         productList.add(new Product(8, "HP8", 180000));
         productList.add(new Product(9, "HP9", 190000));
 
-        List<Double> newList = productList.stream().
-                filter(p -> p.price > 140000).
-                map(p->p.price).
-                collect(Collectors.toList());
-        System.out.println(newList);
+//        List<Double> newList = productList.stream().
+//                filter(p -> p.price > 140000).
+//                map(p->p.price).
+//                collect(Collectors.toList());
+//        System.out.println(newList);
+        productList.stream().
+                filter(product -> product.price == 130000).
+                forEach(product -> System.out.println("Product Id: "+ product.id+", Product name: "+ product.name));
     }
 }
